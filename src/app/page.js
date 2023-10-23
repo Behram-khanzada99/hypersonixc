@@ -1,113 +1,258 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <html>
+      <head>
+        <title>home</title>
+      </head>
+      <body>
+        <div className="w-full max-w-[1400px] flex justify-center mx-auto">
+          <div>
+            {/* div for content with same bg */}
+            <div className="relative">
+              <img src="/images/home bg.png" alt="home bg img" />
+              <div className="absolute top-0 w-full">
+                <div class="flex mb-4">
+                  <div class="w-full bg-gray-500 h-12">
+                    <header className="text-white flex justify-between w-full ">
+                      <img
+                        className="px-6 py-4"
+                        src="/images/hypersonic logo.png"
+                        alt="logo"
+                      ></img>
+                      <nav className="flex flex-wrap items-center justify-between p-4">
+                        <ul className="flex top-1">
+                          <li className="mr-6">
+                            <a href="#">services</a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">clients</a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">insights</a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">contact</a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">about</a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">
+                              {" "}
+                              <img
+                                className="mr-6"
+                                src="/images/facebook-fill.png"
+                                alt="fb logo"
+                              />
+                            </a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">
+                              <img
+                                className="mr-6"
+                                src="/images/twitter-fill.png"
+                                alt="fb logo"
+                              />
+                            </a>
+                          </li>
+                          <li className="mr-6">
+                            <a href="#">
+                              <img
+                                className="mr-6"
+                                src="/images/instagram-line.png"
+                                alt="insta logo"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </header>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="text-white">
+                    <h1 className="py-14 text-5xl flex items-center justify-center">
+                      <strong>FAST-FORWARD YOUR BUSINESS</strong>
+                    </h1>
+                    <p className="flex items-center justify-center">
+                      we accelerate growth and profitability with customer
+                      centric marketing
+                    </p>
+                    <ul className="flex top-1 items-center justify-center">
+                      <li className="flex items-center justify-center mr-6">
+                        <a href="#">contact us</a>
+                      </li>
+                      <li className="flex items-center justify-center mr-6">
+                        <a href="#">learn more</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* div for measurable results section */}
+            <div>
+              <p className="flex items-center justify-center pt-14">
+                WHAT TO EXPECT
+              </p>
+              <h2 className="flex items-center justify-center py-2 pb-10 text-3xl">
+                <strong>measurable results</strong>
+              </h2>
+
+              <div className="flex mb-4 justify-center">
+                <div>
+                  <div className="flex justify-center w-full">
+                    <img
+                      // className="pl-20"
+                      src="/images/measurable results/image 1.png"
+                      alt="optimization"
+                    />
+                  </div>
+
+                  <p className="text-center">
+                    smarter campaigns that outperform the competition on any
+                    device.
+                  </p>
+                </div>
+
+                <div>
+                  <div className="flex justify-center w-full">
+                  <img
+                    src="/images/measurable results/image 2.png"
+                    alt="analytics"
+                  />
+
+                  </div>
+                  
+                  <p className="text-center">
+                    meaningful insights that give you a better understanding of
+                    your customers
+                  </p>
+                </div>
+
+                <div>
+                  <div className="flex justify-center w-full">
+                  <img
+                    src="/images/measurable results/image 3.png"
+                    alt="strategy"
+                  />
+                  </div>
+                 
+                  <p className="text-center">
+                    bold ideas from a team that knows what it takes to win.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* div for case study section */}
+            <div className="relative">
+              <img
+                src="/images/case study bg.png"
+                alt="case study section bg"
+              />
+              <div className="absolute top-0 w-full text-white">
+                <h2 className="flex items-center justify-center py-3">
+                  HOW WE WORK
+                </h2>
+                <h1 className="flex items-center justify-center text-3xl py-3">
+                  <strong>CASE STUDY</strong>
+                </h1>
+                <p className="flex items-center justify-center text-center">
+                  view an example of our recent work and learn about <br></br>{" "}
+                  the process we use to move out clients forward.
+                </p>
+                <a className="flex items-center justify-center pt-20" href="#">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            {/* div for customer experience */}
+            <div>
+              {/* <h2 className="flex items-center justify-center pt-14">WHAT WE FOCUS</h2>
+              <h1 className="flex items-center justify-center pt-14">CUSTOMER EXPERIENCE</h1>
+              <p>
+                find the missing spark in your customer relationship starts with
+                building a better understanding of your customers.
+              </p>
+              <p>
+                <strong>Data Science</strong>
+              </p>
+              <img
+                src="/images/data science progress.png"
+                alt="ds progress"
+              ></img>
+              <p>
+                <strong>Creative Thinking</strong>
+              </p>
+              <img
+                src="/images/creative thinking progress.png"
+                alt="ct progress"
+              ></img> */}
+
+              <div class="flex mb-4 py-10 justify-center align-middle">
+                <img src="/images/customer experience/customer experience img 1.png"></img>
+                <img src="/images/customer experience/customer exp mobileimg 2.png.png"></img>
+              </div>
+            </div>
+            <div title="accelerate growth">
+              <img
+                src="/images/accelarate growth/accelarate growth bg.png"
+                alt="accelerative growth bg"
+              ></img>
+              <h2>WHAT WE FOCUS</h2>
+              <h1>ACCELERATE GROWTH</h1>
+              <p>
+                business of all sizes partner with us to uncover sharper
+                insights and create smarter marketing that grows conversions
+              </p>
+              <img
+                src="/images/accelarate growth/marketing.png"
+                alt="marketing"
+              ></img>
+              <h2>MARKETING</h2>
+              <p>Data-driven marketing that delivers measurable results.</p>
+              <img
+                src="/images/accelarate growth/experience.png"
+                alt="experience"
+              ></img>
+              <h2>EXPERIENCE</h2>
+              <p>website and app that your customer will love.</p>
+              <img
+                src="/images/accelarate growth/creative.png"
+                alt="creative"
+              ></img>
+              <h2>CREATIVE</h2>
+              <p>immaginative content that creates connections.</p>
+              <img
+                src="/images/accelarate growth/analyticcs.png"
+                alt="analytics"
+              ></img>
+              <h2>ANALYTICS</h2>
+              <p>better data that lead to better decisions.</p>
+            </div>
+            <div title="get started">
+              <img
+                src="/images/case study bg.png"
+                alt="get started section bg"
+              />
+              <h2>NEXT STEPS</h2>
+              <h1>GET STARTED</h1>
+              <p>
+                call and email us to learn more about our services or request a
+                proposal from our team.
+              </p>
+              <a href="#">proposal</a>
+              <a href="#">contact us</a>
+            </div>
+            <div title="our insights">
+              <h1>Our Insights</h1>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </body>
+    </html>
+  );
 }
