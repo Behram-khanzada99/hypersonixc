@@ -2,9 +2,9 @@ import React from "react";
 const page = () => {
   return (
     <div className="w-full  flex justify-center mx-auto">
-      <div className="max-w-[1400px]">
+      <div>
         {/* div for content with same bg */}
-        <div className="relative ">
+        <div className="relative">
           <img src="/images/2nd page/OurServices bg.png" alt="home bg img" />
           <div className="absolute top-0 w-full">
             <div class="flex mb-4">
