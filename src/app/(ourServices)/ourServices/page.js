@@ -18,19 +18,19 @@ const page = () => {
                   <nav className="flex flex-wrap items-center justify-between p-4 px-10">
                     <ul className="flex top-2">
                       <li className="mr-6">
-                        <a href="#">services</a>
+                        <a href="#">Services</a>
                       </li>
                       <li className="mr-6">
-                        <a href="#">clients</a>
+                        <a href="#">Clients</a>
                       </li>
                       <li className="mr-6">
-                        <a href="#">about</a>
+                        <a href="#">About</a>
                       </li>
                       <li className="mr-6">
-                        <a href="#">insights</a>
+                        <a href="#">Insights</a>
                       </li>
                       <li className="mr-6">
-                        <a href="#">contact</a>
+                        <a href="#">Contact</a>
                       </li>
                       <div></div>
                       <li className="mr-2">
