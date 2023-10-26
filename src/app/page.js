@@ -12,50 +12,49 @@ const page = () => {
             src="/images/home bg.png"
             alt="home bg img"
           />
-          <div className="absolute max-w-[1400px] mx-auto top-0 w-full">
-            <div class="flex mb-4">
-              <div class="w-full bg-transparent h-20 border-b border-gray-500">
-                <header className="text-white flex justify-between w-full ">
+          <div className="absolute  mx-auto top-0 w-full">
+            <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
+              <div class="w-full bg-transparent container">
+                <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
                     <img
-                      className="px-6 py-6 pl-20"
                       src="/images/hypersonic logo.png"
                       alt="logo"
                     ></img>
                   </Link>
 
-                  <nav className="flex flex-wrap items-center justify-between p-4 px-10">
-                    <ul className="flex top-2">
-                      <li className="mr-6">
+                  <nav className="flex flex-wrap items-center justify-between">
+                    <ul className="flex gap-6 top-2">
+                      <li>
                         <Link href="/ourServices">Services</Link>
                       </li>
-                      <li className="mr-6 ">
+                      <li>
                         <a href="#">Clients</a>
                       </li>
-                      <li className="mr-6">
+                      <li>
                         <a href="#">About</a>
                       </li>
-                      <li className="mr-6">
+                      <li>
                         <a href="#">Insights</a>
                       </li>
-                      <li className="mr-6">
+                      <li>
                         <a href="#">Contact</a>
                       </li>
                     </ul>
-                    <div className="flex border-l-2 border-gray-500 ">
+                    <div className="flex gap-4 border-l-2 border-gray-500 ">
                       {" "}
                       <img
-                        className="mr-4 pl-6"
+                        className=" pl-6"
                         src="/images/facebook-fill.png"
                         alt="fb logo"
                       />
                       <img
-                        className="mr-4"
+                        className=""
                         src="/images/twitter-fill.png"
                         alt="twitter logo"
                       />
                       <img
-                        className="mr-4"
+                        className=""
                         src="/images/instagram-line.png"
                         alt="insta logo"
                       />
@@ -88,7 +87,7 @@ const page = () => {
         </div>
 
         {/* div for measurable results section */}
-        <div className=" px-36 max-w-[1400px] mx-auto">
+        <div className="container mx-auto">
           <p className="flex items-center justify-center pt-28">
             WHAT TO EXPECT
           </p>
@@ -170,7 +169,7 @@ const page = () => {
         </div>
 
         {/* div for customer experience */}
-        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+        <div class="flex mb-4 py-10 container mx-auto pb-24 justify-center align-middle">
           <div>
             <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
             <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
@@ -217,7 +216,7 @@ const page = () => {
             src="/images/accelarate growth/accelarate growth bg.png"
             alt="accelerative growth bg"
           ></img>
-          <div className="absolute max-w-[1400px] mx-auto top-10 w-full text-white py-10 px-36">
+          <div className="absolute container mx-auto top-10 w-full text-white py-10">
             <div className=" text-left">
               <h2 className="pb-7 font-medium text-gray-400">WHAT WE DO</h2>
               <h1 className="font-bold text-3xl pb-5">ACCELERATE GROWTH</h1>
@@ -299,7 +298,7 @@ const page = () => {
             src="/images/case study bg.png"
             alt="get started section bg"
           />
-          <div className="absolute max-w-[1400px] mx-auto top-10 w-full text-center justify-center text-white py-4">
+          <div className="absolute container mx-auto top-10 w-full text-center justify-center text-white py-4">
             <h2 className="pt-5 py-3">NEXT STEPS</h2>
             <h1 className="text-3xl font-bold pt-5 pb-5">GET STARTED</h1>
             <p className=" pb-5">
@@ -318,15 +317,15 @@ const page = () => {
           </div>
         </div>
         {/* div for our insights section */}
-        <div className="max-w-[1400px] mx-auto">
-          <div className=" px-36 pb-24">
+        <div className="container mx-auto">
+          <div className="pb-24">
             <h1 className="pt-20 pb-10 text-5xl font-extrabold text-center justify-center">
               Our Insights
             </h1>
             <div>
-              <div className=" text-left justify-start">
-                <div class="grid grid-cols-3 gap-8 py-5 mr-5">
-                  <div className=" border-2 rounded-xl px-7 py-7">
+              <div className=" text-left justify-start w-full">
+                <div class="grid grid-cols-3 gap-8 py-5 w-full">
+                  <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
                     <h1 className="text-2xl font-bold pb-5">
                       9 Guidlines for E-commerce Product Images
@@ -335,11 +334,14 @@ const page = () => {
                       A picture is worth more than a thousand texts, as the
                       saying goes. and..
                     </p>
-                    <p>
-                      <strong>Hypersonic</strong> on april 12, 2022
+                    <p className="text-xs">
+                      <span className=" uppercase text-xs font-bold">
+                        Hypersonic
+                      </span>{" "}
+                      on April 12, 2022
                     </p>
                   </div>
-                  <div className=" border-2 rounded-xl px-7 py-7">
+                  <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
                     <h1 className="text-2xl font-bold pb-5">
                       9 Guidelines for E-commerce Product Images
@@ -348,24 +350,30 @@ const page = () => {
                       A picture is worth more than a thousand texts, as the
                       saying goes. and..
                     </p>
-                    <p>
-                      <strong>Hypersonic</strong> on april 12, 2022
+                    <p className="text-xs">
+                      <span className=" uppercase text-xs font-bold">
+                        Hypersonic
+                      </span>{" "}
+                      on april 12, 2022
                     </p>
                   </div>
-                  <div className=" border-2 rounded-xl px-7 py-7">
+                  <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
                     <h1 className="text-2xl font-bold pb-5">
                       Advertising On Amazon For Amazon Sellers
                     </h1>
                     <p className=" pb-5 text-gray-400">
-                      <br></br>As an amazon seller, you should always be looking
-                      for ways to increase the...
+                      As an amazon seller, you should always be looking for ways
+                      to increase the...
                     </p>
-                    <p className=" pb-5">
-                      <strong>Hypersonic</strong> on january 04, 2022
+                    <p className="text-xs pb-4">
+                      <span className=" uppercase text-xs font-bold">
+                        Hypersonic
+                      </span>{" "}
+                      on january 04, 2022
                     </p>
                   </div>
-                  <div className=" border-2 rounded-xl px-7 py-7">
+                  <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
                     <h1 className="text-2xl font-bold pb-5">
                       What is Faderated Learning for Cohorts (FLoC)
@@ -374,11 +382,14 @@ const page = () => {
                       Google is further ensuring that third-party cookies are
                       being laid to rest by introducing...
                     </p>
-                    <p className=" pb-5">
-                      <strong>Hypersonic</strong> on september 04, 2022
+                    <p className=" text-xs">
+                      <span className=" uppercase text-xs font-bold">
+                        Hypersonic
+                      </span>{" "}
+                      on september 04, 2022
                     </p>
                   </div>
-                  <div className=" border-2 rounded-xl px-7 py-7">
+                  <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
                     <h1 className="text-2xl font-bold pb-5">
                       Instagram Reels: What Are They and How to Use them?
@@ -387,11 +398,14 @@ const page = () => {
                       Recently you might have noticed short video clips or reels
                       on your instagram feed. ....
                     </p>
-                    <p>
-                      <strong>Hypersonic</strong> on may 21, 2022
+                    <p className=" pb-4 text-xs">
+                      <span className=" uppercase text-xs font-bold">
+                        Hypersonic
+                      </span>{" "}
+                      on may 21, 2022
                     </p>
                   </div>
-                  <div className=" border-2 rounded-xl px-7 py-7">
+                  <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <img
                       className=" mx-auto pt-24"
                       src="/images/plus sign.png"
@@ -414,8 +428,8 @@ const page = () => {
               src="/images/footer bg.png"
               alt="footer bg"
             ></img>
-            <div className="absolute max-w-[1400px] top-[25%] bottom-[35%] flex w-full">
-              <div className="ml-20">
+            <div className="container absolute top-[25%] bottom-[35%] flex justify-between w-full">
+              <div className="flex gap-[120px] w-full">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
                   <li className=" pb-5 text-gray-400">Services</li>
@@ -424,9 +438,6 @@ const page = () => {
                   <li className=" pb-5 text-gray-400">Careers</li>
                   <li className=" pb-5 text-gray-400">Contact</li>
                 </ul>
-              </div>
-
-              <div className="ml-20">
                 <ul>
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
                   <li className=" pb-5 text-gray-400">Advertising</li>
@@ -436,12 +447,9 @@ const page = () => {
                   <li className=" pb-5 text-gray-400">Education</li>
                 </ul>
               </div>
-
-              <div className="flex flex-wrap justify-end text-right w-full pr-32">
-                <p className=" text-lg text-right pr-44 font-bold w-full">
-                  FOLLOW US
-                </p>
-                <div className="flex items-start pr-2">
+              <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
+                <p className=" text-lg font-bold w-full">FOLLOW US</p>
+                <div className="py-8 flex pr-2 border-b border-neutral-700">
                   <img
                     className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"
@@ -463,7 +471,7 @@ const page = () => {
                     src="/images/youtube logo.png"
                   ></img>
                 </div>
-                <p className="w-full text-end flex justify-end">
+                <p className="text-sm whitespace-nowrap pt-5 w-full">
                   © 2022 Hypersonic All Right Reserved
                 </p>
               </div>
