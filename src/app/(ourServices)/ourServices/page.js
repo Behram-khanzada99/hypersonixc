@@ -1,20 +1,25 @@
 import React from "react";
+import Link from "next/link";
 const page = () => {
   return (
     <div className="w-full  flex justify-center mx-auto">
-      <div className="max-w-[1400px]">
+      <div className=" ">
         {/* div for content with same bg */}
-        <div className="relative ">
+        <div className="relative max-w-[1400px] mx-auto">
           <img src="/images/2nd page/OurServices bg.png" alt="home bg img" />
           <div className="absolute top-0 w-full">
             <div class="flex mb-4">
               <div class="w-full bg-transparent h-20 border-b border-gray-500">
                 <header className="text-white flex justify-between w-full ">
-                  <img
-                    className="px-6 py-6"
+
+                <Link href="/"><img
+                    className="px-6 py-6 pl-20"
                     src="/images/hypersonic logo.png"
                     alt="logo"
                   ></img>
+                  </Link>
+
+
                   <nav className="flex flex-wrap items-center justify-between p-4 px-10">
                     <ul className="flex top-2">
                       <li className="mr-6">
@@ -71,8 +76,10 @@ const page = () => {
             </div>
           </div>
         </div>
+
+
         {/* div for second section */}
-        <div className="text-center justify-center px-52 py-20 border-b-2">
+        <div className="text-center justify-center max-w-[1400px] mx-auto px-52 py-20 border-b-2">
           <h1 className=" font-bold text-4xl pb-4">
             Digital marketing for businesses
           </h1>
@@ -83,6 +90,8 @@ const page = () => {
             deliver on what we promise.
           </p>
         </div>
+
+
         {/* div for third section */}
         <div>
           <div className=" items-center flex mb-4 justify-center pb-20 py-12">
@@ -204,7 +213,7 @@ const page = () => {
         </div>
 
         {/* div for seventh section */}
-        <div className="flex justify-center align-middle pb-20">
+        <div className="flex justify-center align-middle pb-20 ">
           <div className=" align-middle justify-center">
             <div className="relative">
               <img src="/images/2nd page/light gray bg.png"></img>
@@ -231,64 +240,63 @@ const page = () => {
         </div>
 
         <footer>
-        <div className="relative">
-                <img src="/images/footer bg.png" alt="footer bg"></img>
-                <div className="absolute top-[25%] bottom-[25%] flex w-full">
-                  <div className="ml-20">
-                    <ul>
-                      <li className="font-bold text-xl pb-5">NAVIGRATION</li>
-                      <li className=" pb-5 text-gray-400">Services</li>
-                      <li className=" pb-5 text-gray-400">Clients</li>
-                      <li className=" pb-5 text-gray-400">About</li>
-                      <li className=" pb-5 text-gray-400">Careers</li>
-                      <li className=" pb-5 text-gray-400">Contact</li>
-                    </ul>
-                  </div>
-
-                  <div className="ml-20">
-                    <ul>
-                      <li className="font-bold text-xl pb-5">INSIGHTS</li>
-                      <li className=" pb-5 text-gray-400">Advertising</li>
-                      <li className=" pb-5 text-gray-400">Analytics</li>
-                      <li className=" pb-5 text-gray-400">CX Management</li>
-                      <li className=" pb-5 text-gray-400">E-commerce</li>
-                      <li className=" pb-5 text-gray-400">Education</li>
-                    </ul>
-                  </div>
-
-                  <div className="flex flex-wrap justify-end text-right w-full pr-52">
-                    <p className=" text-lg text-right pr-52 font-bold w-full">FOLLOW US</p>
-                    <div className="flex items-start pr-28">
-                      <img
-                        className=" object-scale-down pr-4"
-                        src="/images/facebook-fill black.png"
-                      ></img>
-                      <img
-                        className=" object-scale-down pr-4"
-                        src="/images/twitter-fill  black.png"
-                      ></img>
-                      <img
-                        className=" object-scale-down pr-4"
-                        src="/images/instagram-line black.png"
-                      ></img>
-                      <img
-                        className=" object-scale-down pr-4"
-                        src="/images/linkdin logo.png"
-                      ></img>
-                      <img
-                        className=" object-scale-down pr-4"
-                        src="/images/youtube logo.png"
-                      ></img>
-                      
-                    </div>
-                    <p className="w-full pr-6">© 2022 Hypersonic All Right Reserved</p>
-
-                  </div>
-                  
-                </div>
-                
+          <div className="relative max-w-[1400px] mx-auto">
+            <img src="/images/footer bg.png" alt="footer bg"></img>
+            <div className="absolute top-[25%] bottom-[25%] flex w-full">
+              <div className="ml-20">
+                <ul>
+                  <li className="font-bold text-xl pb-5">NAVIGRATION</li>
+                  <li className=" pb-5 text-gray-400">Services</li>
+                  <li className=" pb-5 text-gray-400">Clients</li>
+                  <li className=" pb-5 text-gray-400">About</li>
+                  <li className=" pb-5 text-gray-400">Careers</li>
+                  <li className=" pb-5 text-gray-400">Contact</li>
+                </ul>
               </div>
-              
+
+              <div className="ml-20">
+                <ul>
+                  <li className="font-bold text-xl pb-5">INSIGHTS</li>
+                  <li className=" pb-5 text-gray-400">Advertising</li>
+                  <li className=" pb-5 text-gray-400">Analytics</li>
+                  <li className=" pb-5 text-gray-400">CXManagement</li>
+                  <li className=" pb-5 text-gray-400">E-commerce</li>
+                  <li className=" pb-5 text-gray-400">Education</li>
+                </ul>
+              </div>
+
+              <div className="flex flex-wrap justify-end text-right w-full pr-52">
+                <p className=" text-lg text-right pr-52 font-bold w-full">
+                  FOLLOW US
+                </p>
+                <div className="flex items-start pr-28">
+                  <img
+                    className=" object-scale-down pr-4"
+                    src="/images/facebook-fill black.png"
+                  ></img>
+                  <img
+                    className=" object-scale-down pr-4"
+                    src="/images/twitter-fill  black.png"
+                  ></img>
+                  <img
+                    className=" object-scale-down pr-4"
+                    src="/images/instagram-line black.png"
+                  ></img>
+                  <img
+                    className=" object-scale-down pr-4"
+                    src="/images/linkdin logo.png"
+                  ></img>
+                  <img
+                    className=" object-scale-down pr-4"
+                    src="/images/youtube logo.png"
+                  ></img>
+                </div>
+                <p className="w-full pr-6">
+                  © 2022 Hypersonic All Right Reserved
+                </p>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </div>

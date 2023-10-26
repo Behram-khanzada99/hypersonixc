@@ -3,20 +3,24 @@ import React from "react";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="w-full  flex justify-center mx-auto">
-      <div className="max-w-[1400px]">
+    <div className="w-full flex justify-center mx-auto">
+      <div className="">
+
         {/* div for content with same bg */}
-        <div className="relative ">
+        <div className="relative max-w-[1400px] mx-auto">
           <img src="/images/home bg.png" alt="home bg img" />
           <div className="absolute top-0 w-full">
             <div class="flex mb-4">
               <div class="w-full bg-transparent h-20 border-b border-gray-500">
                 <header className="text-white flex justify-between w-full ">
-                  <img
-                    className="px-6 py-6 pl-20"
-                    src="/images/hypersonic logo.png"
-                    alt="logo"
-                  ></img>
+                  <Link href="/">
+                    <img
+                      className="px-6 py-6 pl-20"
+                      src="/images/hypersonic logo.png"
+                      alt="logo"
+                    ></img>
+                  </Link>
+
                   <nav className="flex flex-wrap items-center justify-between p-4 px-10">
                     <ul className="flex top-2">
                       <li className="mr-6">
@@ -34,25 +38,25 @@ const page = () => {
                       <li className="mr-6">
                         <a href="#">Contact</a>
                       </li>
-                     
                     </ul>
-                    <div className="flex border-l-2 border-gray-500 ">  <img
-                            className="mr-4 pl-6"
-                            src="/images/facebook-fill.png"
-                            alt="fb logo"
-                          />
-                          <img
-                            className="mr-4"
-                            src="/images/twitter-fill.png"
-                            alt="twitter logo"
-                          />
-                           <img
-                            className="mr-4"
-                            src="/images/instagram-line.png"
-                            alt="insta logo"
-                          />
-
-                               </div>
+                    <div className="flex border-l-2 border-gray-500 ">
+                      {" "}
+                      <img
+                        className="mr-4 pl-6"
+                        src="/images/facebook-fill.png"
+                        alt="fb logo"
+                      />
+                      <img
+                        className="mr-4"
+                        src="/images/twitter-fill.png"
+                        alt="twitter logo"
+                      />
+                      <img
+                        className="mr-4"
+                        src="/images/instagram-line.png"
+                        alt="insta logo"
+                      />
+                    </div>
                   </nav>
                 </header>
               </div>
@@ -81,7 +85,7 @@ const page = () => {
         </div>
 
         {/* div for measurable results section */}
-        <div className=" px-36">
+        <div className=" px-36 max-w-[1400px] mx-auto">
           <p className="flex items-center justify-center pt-28">
             WHAT TO EXPECT
           </p>
@@ -93,7 +97,6 @@ const page = () => {
             <div>
               <div className="flex justify-center w-full">
                 <img
-                  // className="pl-20"
                   src="/images/measurable results/image 1.png"
                   alt="optimization"
                 />
@@ -136,7 +139,7 @@ const page = () => {
         </div>
 
         {/* div for case study section */}
-        <div className="relative">
+        <div className="relative max-w-[1400px] mx-auto">
           <img src="/images/case study bg.png" alt="case study section bg" />
           <div className="absolute top-[20%] w-full flex items-center justify-center">
             <div className="  text-white">
@@ -150,9 +153,6 @@ const page = () => {
                 View an example of our recent work and learn about <br></br> the
                 process we use to move out clients forward.
               </p>
-              {/* <a className="flex items-center justify-center pt-20" href="#">
-                  Learn More
-                </a> */}
               <div className="flex items-center justify-center pt-16">
                 <button className=" bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent rounded">
                   Learn More
@@ -161,8 +161,9 @@ const page = () => {
             </div>
           </div>
         </div>
+
         {/* div for customer experience */}
-        <div class="flex mb-4 px-40 py-10 pb-24 justify-center align-middle">
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
           <div>
             <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
             <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
@@ -194,21 +195,328 @@ const page = () => {
             </div>
           </div>
 
-          <div className=" pl-16 pt-10">
+          <div className=" pl-14 pt-10">
             <img
-              className=" scale-125"
+              className=" scale-120"
               src="/images/customer experience/customer exp mobileimg 2.png.png"
             ></img>
           </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
 
-          {/* <div class="flex mb-4 py-10 justify-center align-middle">
-                <img src="/images/customer experience/customer experience img 1.png"></img>
-                <img src="/images/customer experience/customer exp mobileimg 2.png.png"></img>
-              </div> */}
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
+        </div>
+        <div class="flex mb-4 px-36 py-10 max-w-[1400px] mx-auto pb-24 justify-center align-middle">
+          <div>
+            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+            <p className="pt-4 text-gray-400">
+              Find the missing spark in your customer relationship starts with
+              building a better understanding of your customers.
+            </p>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Data Science
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+            <div className="flex justify-between mb-1 pt-5">
+              <span className="text-base font-medium text-red-700 dark:text-black">
+                Creative Thinking
+              </span>
+              <span className="text-sm font-medium text-red-700 dark:text-black">
+                50%
+              </span>
+            </div>
+            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+              <div className="bg-red-600 h-2 rounded-full "></div>
+            </div>
+          </div>
+
+          <div className=" pl-14 pt-10">
+            <img
+              className=" scale-120"
+              src="/images/customer experience/customer exp mobileimg 2.png.png"
+            ></img>
+          </div>
         </div>
 
         {/* accelerative growth div */}
-        <div className="relative text-center justify-center align-middle">
+        <div className="relative max-w-[1400px] mx-auto text-center justify-center align-middle">
           <img
             src="/images/accelarate growth/accelarate growth bg.png"
             alt="accelerative growth bg"
@@ -246,7 +554,7 @@ const page = () => {
 
               <div>
                 <img
-                  className="pb-3"
+                  className="pb-3 "
                   src="/images/accelarate growth/experience.png"
                   alt="experience"
                 ></img>
@@ -289,109 +597,110 @@ const page = () => {
           </div>
         </div>
         {/* div for get started section */}
-        <div className="relative">
+        <div className="relative max-w-[1400px] mx-auto">
           <img src="/images/case study bg.png" alt="get started section bg" />
           <div className="absolute top-10 w-full text-center justify-center text-white py-4">
             <h2 className="pt-5 py-3">NEXT STEPS</h2>
             <h1 className="text-3xl font-bold pt-5 pb-5">GET STARTED</h1>
             <p className=" pb-5">
-              Call and email us to learn more about our services or request a
+              Call and email us to learn more about our services or <br></br> request a
               proposal from our team.
             </p>
-            {/* <a href="#">proposal</a>
-              <a href="#">contact us</a> */}
+           
             <div className="pt-5">
-              <button className="mr-5 text-lg bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent rounded">
+              <button className="mr-5 text-lg bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent rounded-md">
                 Proposal
               </button>
-              <button className="ml-5 text-lg bg-white text-black font-bold py-2 px-4 border border-white hover:border-transparent rounded">
+              <button className="ml-5 text-lg bg-white text-black font-bold py-2 px-4 border border-white hover:border-transparent rounded-md">
                 Contact Us
               </button>
             </div>
           </div>
         </div>
         {/* div for our insights section */}
-        <div className=" px-36 pb-24">
-          <h1 className="pt-20 pb-10 text-5xl font-extrabold text-center justify-center">
-            Our Insights
-          </h1>
-          <div>
-            <div className=" text-left justify-start">
-              <div class="grid grid-cols-3 gap-8 py-5 mr-5">
-                <div className=" border-2 rounded-xl px-7 py-7">
-                  <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                  <h1 className="text-2xl font-bold pb-5">
-                    9 Guidlines for E-commerce Product Images
-                  </h1>
-                  <p className=" pb-5 text-gray-400">
-                    A picture is worth more than a thousand texts, as the saying
-                    goes. and..
-                  </p>
-                  <p>
-                    <strong>Hypersonic</strong> on april 12, 2022
-                  </p>
-                </div>
-                <div className=" border-2 rounded-xl px-7 py-7">
-                  <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                  <h1 className="text-2xl font-bold pb-5">
-                    9 guidlines for e-commerce product images
-                  </h1>
-                  <p className=" pb-5 text-gray-400">
-                    A picture is worth more than a thousand texts, as the saying
-                    goes. and..
-                  </p>
-                  <p>
-                    <strong>Hypersonic</strong> on april 12, 2022
-                  </p>
-                </div>
-                <div className=" border-2 rounded-xl px-7 py-7">
-                  <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                  <h1 className="text-2xl font-bold pb-5">
-                    Advertising On Amazon For Amazon Sellers
-                  </h1>
-                  <p className=" pb-5 text-gray-400">
-                    <br></br>As an amazon seller, you should always be looking
-                    for ways to increase the...
-                  </p>
-                  <p className=" pb-5">
-                    <strong>Hypersonic</strong> on january 04, 2022
-                  </p>
-                </div>
-                <div className=" border-2 rounded-xl px-7 py-7">
-                  <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                  <h1 className="text-2xl font-bold pb-5">
-                    What is Faderated Learning for Cohorts (FLoC)
-                  </h1>
-                  <p className=" pb-5 text-gray-400">
-                    Google is further ensuring that third-party cookies are
-                    being laid to rest by introducing...
-                  </p>
-                  <p className=" pb-5">
-                    <strong>Hypersonic</strong> on september 04, 2022
-                  </p>
-                </div>
-                <div className=" border-2 rounded-xl px-7 py-7">
-                  <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                  <h1 className="text-2xl font-bold pb-5">
-                    Instagram Reels: What Are They and How to Use them?
-                  </h1>
-                  <p className=" pb-5 text-gray-400">
-                    Recently you might have noticed short video clips or reels
-                    on your instagram feed. ....
-                  </p>
-                  <p>
-                    <strong>Hypersonic</strong> on may 21, 2022
-                  </p>
-                </div>
-                <div className=" border-2 rounded-xl px-7 py-7">
-                  <img
-                    className=" mx-auto pt-24"
-                    src="/images/plus sign.png"
-                    alt="plus sign"
-                  ></img>
-                  <p className=" text-center text-2xl font-semibold pt-3">
-                    View All Posts
-                  </p>
+        <div className="max-w-[1400px] mx-auto">
+          <div className=" px-36 pb-24">
+            <h1 className="pt-20 pb-10 text-5xl font-extrabold text-center justify-center">
+              Our Insights
+            </h1>
+            <div>
+              <div className=" text-left justify-start">
+                <div class="grid grid-cols-3 gap-8 py-5 mr-5">
+                  <div className=" border-2 rounded-xl px-7 py-7">
+                    <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
+                    <h1 className="text-2xl font-bold pb-5">
+                      9 Guidlines for E-commerce Product Images
+                    </h1>
+                    <p className=" pb-5 text-gray-400">
+                      A picture is worth more than a thousand texts, as the
+                      saying goes. and..
+                    </p>
+                    <p>
+                      <strong>Hypersonic</strong> on april 12, 2022
+                    </p>
+                  </div>
+                  <div className=" border-2 rounded-xl px-7 py-7">
+                    <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
+                    <h1 className="text-2xl font-bold pb-5">
+                      9 Guidelines for E-commerce Product Images
+                    </h1>
+                    <p className=" pb-5 text-gray-400">
+                      A picture is worth more than a thousand texts, as the
+                      saying goes. and..
+                    </p>
+                    <p>
+                      <strong>Hypersonic</strong> on april 12, 2022
+                    </p>
+                  </div>
+                  <div className=" border-2 rounded-xl px-7 py-7">
+                    <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
+                    <h1 className="text-2xl font-bold pb-5">
+                      Advertising On Amazon For Amazon Sellers
+                    </h1>
+                    <p className=" pb-5 text-gray-400">
+                      <br></br>As an amazon seller, you should always be looking
+                      for ways to increase the...
+                    </p>
+                    <p className=" pb-5">
+                      <strong>Hypersonic</strong> on january 04, 2022
+                    </p>
+                  </div>
+                  <div className=" border-2 rounded-xl px-7 py-7">
+                    <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
+                    <h1 className="text-2xl font-bold pb-5">
+                      What is Faderated Learning for Cohorts (FLoC)
+                    </h1>
+                    <p className=" pb-5 text-gray-400">
+                      Google is further ensuring that third-party cookies are
+                      being laid to rest by introducing...
+                    </p>
+                    <p className=" pb-5">
+                      <strong>Hypersonic</strong> on september 04, 2022
+                    </p>
+                  </div>
+                  <div className=" border-2 rounded-xl px-7 py-7">
+                    <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
+                    <h1 className="text-2xl font-bold pb-5">
+                      Instagram Reels: What Are They and How to Use them?
+                    </h1>
+                    <p className=" pb-5 text-gray-400">
+                      Recently you might have noticed short video clips or reels
+                      on your instagram feed. ....
+                    </p>
+                    <p>
+                      <strong>Hypersonic</strong> on may 21, 2022
+                    </p>
+                  </div>
+                  <div className=" border-2 rounded-xl px-7 py-7">
+                    <img
+                      className=" mx-auto pt-24"
+                      src="/images/plus sign.png"
+                      alt="plus sign"
+                    ></img>
+                    <p className=" text-center text-2xl font-semibold pt-3">
+                      View All Posts
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -399,7 +708,7 @@ const page = () => {
         </div>
 
         <footer>
-          <div className="relative">
+          <div className="relative max-w-[1400px] mx-auto">
             <img src="/images/footer bg.png" alt="footer bg"></img>
             <div className="absolute top-[25%] bottom-[25%] flex w-full">
               <div className="ml-20">
@@ -418,7 +727,7 @@ const page = () => {
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
                   <li className=" pb-5 text-gray-400">Advertising</li>
                   <li className=" pb-5 text-gray-400">Analytics</li>
-                  <li className=" pb-5 text-gray-400">CX Management</li>
+                  <li className=" pb-5 text-gray-400">CXManagement</li>
                   <li className=" pb-5 text-gray-400">E-commerce</li>
                   <li className=" pb-5 text-gray-400">Education</li>
                 </ul>
