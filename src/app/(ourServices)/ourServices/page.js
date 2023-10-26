@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 const page = () => {
   return (
-    <div className="w-full  flex justify-center mx-auto">
-      <div className=" ">
+    <div className="w-full flex justify-center mx-auto">
+      <div className="w-full">
         {/* div for content with same bg */}
-        <div className="relative max-w-[1400px] mx-auto">
-          <img src="/images/2nd page/OurServices bg.png" alt="home bg img" />
-          <div className="absolute top-0 w-full">
+        <div className="relative w-full mx-auto flex justify-center">
+          <img className="w-full max-h-[540px] object-cover" src="/images/2nd page/OurServices bg.png" alt="home bg img" />
+          <div className="absolute max-w-[1400px] mx-auto top-0 w-full">
             <div class="flex mb-4">
               <div class="w-full bg-transparent h-20 border-b border-gray-500">
                 <header className="text-white flex justify-between w-full ">
@@ -240,9 +240,9 @@ const page = () => {
         </div>
 
         <footer>
-          <div className="relative max-w-[1400px] mx-auto">
-            <img src="/images/footer bg.png" alt="footer bg"></img>
-            <div className="absolute top-[25%] bottom-[25%] flex w-full">
+          <div className="relative w-full mx-auto flex justify-center">
+            <img className="w-full max-h-[416px] object-cover" src="/images/footer bg.png" alt="footer bg"></img>
+            <div className="absolute max-w-[1400px] top-[25%] bottom-[25%] flex w-full">
               <div className="ml-20">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
