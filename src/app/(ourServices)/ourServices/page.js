@@ -240,9 +240,13 @@ const page = () => {
         </div>
 
         <footer>
-          <div className="relative w-full mx-auto flex justify-center">
-            <img className="w-full max-h-[416px] object-cover" src="/images/footer bg.png" alt="footer bg"></img>
-            <div className="absolute max-w-[1400px] top-[25%] bottom-[25%] flex w-full">
+        <div className="relative w-full  mx-auto flex justify-center">
+            <img
+              className="w-full max-h-[416px] object-cover"
+              src="/images/footer bg.png"
+              alt="footer bg"
+            ></img>
+            <div className="absolute max-w-[1400px] top-[25%] bottom-[35%] flex w-full">
               <div className="ml-20">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
@@ -265,33 +269,33 @@ const page = () => {
                 </ul>
               </div>
 
-              <div className="flex flex-wrap justify-end text-right w-full pr-52">
-                <p className=" text-lg text-right pr-52 font-bold w-full">
+              <div className="flex flex-wrap justify-end text-right w-full pr-32">
+                <p className=" text-lg text-right pr-44 font-bold w-full">
                   FOLLOW US
                 </p>
-                <div className="flex items-start pr-28">
+                <div className="flex items-start pr-2">
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/twitter-fill  black.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/instagram-line black.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/linkdin logo.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/youtube logo.png"
                   ></img>
                 </div>
-                <p className="w-full pr-6">
+                <p className="w-full text-end flex justify-end">
                   © 2022 Hypersonic All Right Reserved
                 </p>
               </div>

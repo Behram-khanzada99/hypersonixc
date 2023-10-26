@@ -5,10 +5,13 @@ const page = () => {
   return (
     <div className="w-full flex justify-center mx-auto">
       <div className="w-full">
-
         {/* div for content with same bg */}
         <div className="relative w-full mx-auto flex justify-center">
-          <img className="w-full max-h-[960px] object-cover" src="/images/home bg.png" alt="home bg img" />
+          <img
+            className="w-full max-h-[960px] object-cover"
+            src="/images/home bg.png"
+            alt="home bg img"
+          />
           <div className="absolute max-w-[1400px] mx-auto top-0 w-full">
             <div class="flex mb-4">
               <div class="w-full bg-transparent h-20 border-b border-gray-500">
@@ -140,7 +143,11 @@ const page = () => {
 
         {/* div for case study section */}
         <div className="relative w-full flex justify-center mx-auto">
-          <img className="w-full max-h-[440px] object-cover" src="/images/case study bg.png" alt="case study section bg" />
+          <img
+            className="w-full max-h-[440px] object-cover"
+            src="/images/case study bg.png"
+            alt="case study section bg"
+          />
           <div className="absolute top-[20%] w-full mx-auto flex items-center justify-center">
             <div className="  text-white">
               <h2 className="flex items-center justify-center pt-3 py-3 align-middle">
@@ -202,10 +209,11 @@ const page = () => {
             ></img>
           </div>
         </div>
-        
+
         {/* accelerative growth div */}
         <div className="relative w-full mx-auto text-center flex justify-center align-middle">
-          <img className="w-full max-h-[594px] object-cover"
+          <img
+            className="w-full max-h-[594px] object-cover"
             src="/images/accelarate growth/accelarate growth bg.png"
             alt="accelerative growth bg"
           ></img>
@@ -286,15 +294,19 @@ const page = () => {
         </div>
         {/* div for get started section */}
         <div className="relative w-full flex justify-center  mx-auto">
-          <img className="w-full max-h-[432px] object-cover" src="/images/case study bg.png" alt="get started section bg" />
+          <img
+            className="w-full max-h-[432px] object-cover"
+            src="/images/case study bg.png"
+            alt="get started section bg"
+          />
           <div className="absolute max-w-[1400px] mx-auto top-10 w-full text-center justify-center text-white py-4">
             <h2 className="pt-5 py-3">NEXT STEPS</h2>
             <h1 className="text-3xl font-bold pt-5 pb-5">GET STARTED</h1>
             <p className=" pb-5">
-              Call and email us to learn more about our services or <br></br> request a
-              proposal from our team.
+              Call and email us to learn more about our services or <br></br>{" "}
+              request a proposal from our team.
             </p>
-           
+
             <div className="pt-5">
               <button className="mr-5 text-lg bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent rounded-md">
                 Proposal
@@ -397,8 +409,12 @@ const page = () => {
 
         <footer>
           <div className="relative w-full  mx-auto flex justify-center">
-            <img className="w-full max-h-[416px] object-cover" src="/images/footer bg.png" alt="footer bg"></img>
-            <div className="absolute max-w-[1400px] top-[25%] bottom-[25%] flex w-full">
+            <img
+              className="w-full max-h-[416px] object-cover"
+              src="/images/footer bg.png"
+              alt="footer bg"
+            ></img>
+            <div className="absolute max-w-[1400px] top-[25%] bottom-[35%] flex w-full">
               <div className="ml-20">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
@@ -421,33 +437,33 @@ const page = () => {
                 </ul>
               </div>
 
-              <div className="flex flex-wrap justify-end text-right w-full pr-52">
-                <p className=" text-lg text-right pr-52 font-bold w-full">
+              <div className="flex flex-wrap justify-end text-right w-full pr-32">
+                <p className=" text-lg text-right pr-44 font-bold w-full">
                   FOLLOW US
                 </p>
-                <div className="flex items-start pr-28">
+                <div className="flex items-start pr-2">
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/twitter-fill  black.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/instagram-line black.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/linkdin logo.png"
                   ></img>
                   <img
-                    className=" object-scale-down pr-4"
+                    className=" object-scale-down pr-8"
                     src="/images/youtube logo.png"
                   ></img>
                 </div>
-                <p className="w-full pr-6">
+                <p className="w-full text-end flex justify-end">
                   © 2022 Hypersonic All Right Reserved
                 </p>
               </div>
