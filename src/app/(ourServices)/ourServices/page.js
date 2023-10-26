@@ -6,35 +6,38 @@ const page = () => {
       <div className="w-full">
         {/* div for content with same bg */}
         <div className="relative w-full mx-auto flex justify-center">
-          <img className="w-full max-h-[540px] object-cover" src="/images/2nd page/OurServices bg.png" alt="home bg img" />
-          <div className="absolute max-w-[1400px] mx-auto top-0 w-full">
-            <div class="flex mb-4">
-              <div class="w-full bg-transparent h-20 border-b border-gray-500">
-                <header className="text-white flex justify-between w-full ">
-
-                <Link href="/"><img
-                    className="px-6 py-6 pl-20"
-                    src="/images/hypersonic logo.png"
-                    alt="logo"
-                  ></img>
+          <img
+            className="w-full max-h-[540px] object-cover"
+            src="/images/2nd page/OurServices bg.png"
+            alt="home bg img"
+          />
+          <div className="absolute mx-auto top-0 w-full">
+            <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
+              <div class="w-full bg-transparent container">
+                <header className="text-white flex justify-between w-full py-[30px] ">
+                  <Link href="/">
+                    <img
+                      className="px-6 py-6 pl-20"
+                      src="/images/hypersonic logo.png"
+                      alt="logo"
+                    ></img> 
                   </Link>
 
-
-                  <nav className="flex flex-wrap items-center justify-between p-4 px-10">
-                    <ul className="flex top-2">
-                      <li className="mr-6">
+                  <nav className="flex flex-wrap items-center justify-between">
+                    <ul className="flex top-2 gap-6">
+                      <li className="">
                         <a href="#">Services</a>
                       </li>
-                      <li className="mr-6">
+                      <li className="">
                         <a href="#">Clients</a>
                       </li>
-                      <li className="mr-6">
+                      <li className="-">
                         <a href="#">About</a>
                       </li>
-                      <li className="mr-6">
+                      <li className="">
                         <a href="#">Insights</a>
                       </li>
-                      <li className="mr-6">
+                      <li className="">
                         <a href="#">Contact</a>
                       </li>
                       <div></div>
@@ -77,7 +80,6 @@ const page = () => {
           </div>
         </div>
 
-
         {/* div for second section */}
         <div className="text-center justify-center max-w-[1400px] mx-auto px-52 py-20 border-b-2">
           <h1 className=" font-bold text-4xl pb-4">
@@ -90,7 +92,6 @@ const page = () => {
             deliver on what we promise.
           </p>
         </div>
-
 
         {/* div for third section */}
         <div>
@@ -240,14 +241,14 @@ const page = () => {
         </div>
 
         <footer>
-        <div className="relative w-full  mx-auto flex justify-center">
+          <div className="relative w-full  mx-auto flex justify-center">
             <img
               className="w-full max-h-[416px] object-cover"
               src="/images/footer bg.png"
               alt="footer bg"
             ></img>
-            <div className="absolute max-w-[1400px] top-[25%] bottom-[35%] flex w-full">
-              <div className="ml-20">
+            <div className="container absolute top-[25%] bottom-[35%] flex justify-between w-full">
+              <div className="flex gap-[120px] w-full">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
                   <li className=" pb-5 text-gray-400">Services</li>
@@ -256,9 +257,6 @@ const page = () => {
                   <li className=" pb-5 text-gray-400">Careers</li>
                   <li className=" pb-5 text-gray-400">Contact</li>
                 </ul>
-              </div>
-
-              <div className="ml-20">
                 <ul>
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
                   <li className=" pb-5 text-gray-400">Advertising</li>
@@ -268,12 +266,9 @@ const page = () => {
                   <li className=" pb-5 text-gray-400">Education</li>
                 </ul>
               </div>
-
-              <div className="flex flex-wrap justify-end text-right w-full pr-32">
-                <p className=" text-lg text-right pr-44 font-bold w-full">
-                  FOLLOW US
-                </p>
-                <div className="flex items-start pr-2">
+              <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
+                <p className=" text-lg font-bold w-full">FOLLOW US</p>
+                <div className="py-8 flex pr-2 border-b border-neutral-700">
                   <img
                     className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"
@@ -295,7 +290,7 @@ const page = () => {
                     src="/images/youtube logo.png"
                   ></img>
                 </div>
-                <p className="w-full text-end flex justify-end">
+                <p className="text-sm whitespace-nowrap pt-5 w-full">
                   © 2022 Hypersonic All Right Reserved
                 </p>
               </div>

@@ -17,7 +17,7 @@ const page = () => {
               <div class="w-full bg-transparent container">
                 <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
-                    <img
+                    <img  
                       src="/images/hypersonic logo.png"
                       alt="logo"
                     ></img>
@@ -87,7 +87,7 @@ const page = () => {
         </div>
 
         {/* div for measurable results section */}
-        <div className="container mx-auto">
+        <div className="container mx-auto px-44">
           <p className="flex items-center justify-center pt-28">
             WHAT TO EXPECT
           </p>
@@ -96,22 +96,25 @@ const page = () => {
           </h2>
 
           <div className="flex mb-4 justify-center pb-20">
-            <div>
+            <div className=""> 
               <div className="flex justify-center w-full">
                 <img
                   src="/images/measurable results/image 1.png"
                   alt="optimization"
                 />
               </div>
-              <h3 className=" text-center text-xl font-bold py-4">
+              <div className="px-10">
+              <h3 className=" text-center flex justify-center text-xl font-bold py-4 ">
                 optimization
               </h3>
-              <p className="text-center">
+              <p className="text-center flex justify-center">
                 Smarter campaigns that outperform the competition on any device.
               </p>
+              </div>
+             
             </div>
 
-            <div className=" border-l-2 border-r-2 border-gray-200">
+            <div className=" border-l-2 border-r-2 border-gray-200 px-10">
               <div className="flex justify-center w-full">
                 <img
                   src="/images/measurable results/image 2.png"
@@ -169,7 +172,7 @@ const page = () => {
         </div>
 
         {/* div for customer experience */}
-        <div class="flex mb-4 py-10 container mx-auto pb-24 justify-center align-middle">
+        <div class="flex mb-4 py-10 container mx-auto pb-24 justify-center align-middle px-44">
           <div>
             <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
             <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
@@ -216,7 +219,7 @@ const page = () => {
             src="/images/accelarate growth/accelarate growth bg.png"
             alt="accelerative growth bg"
           ></img>
-          <div className="absolute container mx-auto top-10 w-full text-white py-10">
+          <div className="absolute container mx-auto top-10 w-full text-white py-10 px-44">
             <div className=" text-left">
               <h2 className="pb-7 font-medium text-gray-400">WHAT WE DO</h2>
               <h1 className="font-bold text-3xl pb-5">ACCELERATE GROWTH</h1>
@@ -233,7 +236,7 @@ const page = () => {
             </div>
 
             <div className="flex mb-4">
-              <div>
+              <div className="pr-10">
                 <img
                   className="pb-3"
                   src="/images/accelarate growth/marketing.png"
@@ -247,7 +250,7 @@ const page = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="px-10">
                 <img
                   className="pb-3 "
                   src="/images/accelarate growth/experience.png"
@@ -261,7 +264,7 @@ const page = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="px-10">
                 <img
                   className="pb-3"
                   src="/images/accelarate growth/creative.png"
@@ -275,7 +278,7 @@ const page = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="px-10">
                 <img
                   className="pb-3"
                   src="/images/accelarate growth/analyticcs.png"
@@ -318,7 +321,7 @@ const page = () => {
         </div>
         {/* div for our insights section */}
         <div className="container mx-auto">
-          <div className="pb-24">
+          <div className="pb-24 px-52">
             <h1 className="pt-20 pb-10 text-5xl font-extrabold text-center justify-center">
               Our Insights
             </h1>
