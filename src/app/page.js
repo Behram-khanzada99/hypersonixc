@@ -12,15 +12,13 @@ const page = () => {
             src="/images/home bg.png"
             alt="home bg img"
           />
+
           <div className="absolute  mx-auto top-0 w-full">
             <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
               <div class="w-full bg-transparent container">
                 <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
-                    <img  
-                      src="/images/hypersonic logo.png"
-                      alt="logo"
-                    ></img>
+                    <img src="/images/hypersonic logo.png" alt="logo"></img>
                   </Link>
 
                   <nav className="flex flex-wrap items-center justify-between">
@@ -96,7 +94,7 @@ const page = () => {
           </h2>
 
           <div className="flex mb-4 justify-center pb-20">
-            <div className=""> 
+            <div className="">
               <div className="flex justify-center w-full">
                 <img
                   src="/images/measurable results/image 1.png"
@@ -104,14 +102,14 @@ const page = () => {
                 />
               </div>
               <div className="px-10">
-              <h3 className=" text-center flex justify-center text-xl font-bold py-4 ">
-                optimization
-              </h3>
-              <p className="text-center flex justify-center">
-                Smarter campaigns that outperform the competition on any device.
-              </p>
+                <h3 className=" text-center flex justify-center text-xl font-bold py-4 ">
+                  optimization
+                </h3>
+                <p className="text-center flex justify-center">
+                  Smarter campaigns that outperform the competition on any
+                  device.
+                </p>
               </div>
-             
             </div>
 
             <div className=" border-l-2 border-r-2 border-gray-200 px-10">
