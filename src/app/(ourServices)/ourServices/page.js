@@ -247,7 +247,7 @@ const page = () => {
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
                   <li className=" pb-5 text-gray-400">Advertising</li>
                   <li className=" pb-5 text-gray-400">Analytics</li>
-                  <li className=" pb-5 text-gray-400">CXManagement</li>
+                  <li className=" pb-5 text-gray-400">CX Management</li>
                   <li className=" pb-5 text-gray-400">E-commerce</li>
                   <li className=" pb-5 text-gray-400">Education</li>
                 </ul>

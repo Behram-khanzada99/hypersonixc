@@ -13,7 +13,7 @@ const page = () => {
             alt="home bg img"
           />
 
-          <div className="absolute  mx-auto top-0 w-full">
+          <div className=" absolute mx-auto top-0 w-full">
             <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
               <div class="w-full bg-transparent container border-r border-gray-500">
                 <header className="text-white flex justify-between w-full py-[30px]">
@@ -23,19 +23,19 @@ const page = () => {
 
                   <nav className="flex flex-wrap items-center justify-between">
                     <ul className="flex gap-6 top-2">
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <Link href="/ourServices">Services</Link>
                       </li>
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <a href="#">Clients</a>
                       </li>
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <a href="#">About</a>
                       </li>
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <a href="#">Insights</a>
                       </li>
-                      <li className="pr-10">
+                      <li className=" pr-10 hover:bg-slate-700">
                         <a href="#">Contact</a>
                       </li>
                     </ul>
@@ -43,39 +43,45 @@ const page = () => {
                 </header>
               </div>
               <div className="flex gap-5 pl-5 justify-end">
-                {" "}
+                {/* svg disapears when wrapped in link tag */}
+
+                <Link href={"/"}>
+                  <img
+                    className="absolute pt-8 object-scale-down"
+                    src="/images/facebook-logo new.svg"
+                    alt="fb logo"
+                  />{" "}
+                </Link>
+
                 <img
-                  className="pl-4 object-scale-down"
-                  src="/images/facebook-fill.png"
-                  alt="fb logo"
-                />
-                <img
-                  className=" object-scale-down"
+                  className=" object-scale-down pl-5"
                   src="/images/twitter-fill.png"
                   alt="twitter logo"
                 />
-                <img
-                  className=" object-scale-down"
+
+                <Link href={"/"}> <img
+                  className=" absolute pt-8 object-scale-down"
                   src="/images/instagram-line.png"
                   alt="insta logo"
-                />
+                /></Link>
+               
               </div>
             </div>
             <div className="flex items-center justify-center">
               <div className="text-white pt-56">
-                <h1 className="pt-10 pb-6 text-5xl flex items-center justify-center">
-                  <strong>FAST-FORWARD YOUR BUSINESS</strong>
+                <h1 className="pt-10 pb-6 text-7xl flex items font-extrabold font-center justify-center">
+                  Fast-forward your business
                 </h1>
-                <p className="flex items-center justify-center pb-6">
-                  We accelerate growth and profitability with customer centric
+                <p className="flex items-center justify-center pb-4 text-lg">
+                  We accelerate growth and profitability with customer-centric
                   marketing.
                 </p>
 
                 <div className="flex items-center justify-center py-5">
-                  <button className="bg-pink-600 h-10 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-5">
+                  <button className="bg-pink-600 h-11 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg mr-5">
                     Contact Us
                   </button>
-                  <button className="bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent ml-5 rounded">
+                  <button className="bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent ml-5 rounded-lg">
                     Learn More
                   </button>
                 </div>
@@ -86,11 +92,11 @@ const page = () => {
 
         {/* div for measurable results section */}
         <div className="container mx-auto px-44">
-          <p className="flex items-center justify-center pl-16 pt-28">
+          <p className="flex items-center justify-center text-lg pl-16 pt-28">
             WHAT TO EXPECT
           </p>
-          <h2 className="flex items-center justify-center py-2 pb-10 text-4xl pl-16">
-            <strong>Measurable Results</strong>
+          <h2 className="flex items-center justify-center py-2 pb-10 text-4xl pl-16 font-bold">
+            Measurable Results
           </h2>
 
           <div className="flex mb-4 justify-center pb-20">
@@ -112,7 +118,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className=" border-l-2 border-r-2 border-gray-200 px-10">
+            <div className=" border-l-2 border-r-2 border-gray-200">
               <div className="flex justify-center w-full">
                 <img
                   src="/images/measurable results/image 2.png"
@@ -236,7 +242,7 @@ const page = () => {
             </div>
 
             <div className="flex mb-4">
-              <div className="pr-10">
+              <div className="pr-14">
                 <img
                   className="pb-3"
                   src="/images/accelarate growth/marketing.png"
@@ -435,24 +441,68 @@ const page = () => {
               <div className="flex gap-[120px] w-full">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
-                  <li className=" pb-5 text-gray-400">Services</li>
-                  <li className=" pb-5 text-gray-400">Clients</li>
-                  <li className=" pb-5 text-gray-400">About</li>
-                  <li className=" pb-5 text-gray-400">Careers</li>
-                  <li className=" pb-5 text-gray-400">Contact</li>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Services
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Clients
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      About
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Careers
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Contact
+                    </li>
+                  </Link>
                 </ul>
                 <ul>
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
-                  <li className=" pb-5 text-gray-400">Advertising</li>
-                  <li className=" pb-5 text-gray-400">Analytics</li>
-                  <li className=" pb-5 text-gray-400">CXManagement</li>
-                  <li className=" pb-5 text-gray-400">E-commerce</li>
-                  <li className=" pb-5 text-gray-400">Education</li>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Advertising
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Analytics
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      CX Management
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      E-commerce
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Education
+                    </li>{" "}
+                  </Link>
                 </ul>
               </div>
               <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
                 <p className=" text-lg font-bold w-full">FOLLOW US</p>
                 <div className="py-8 flex pr-2 border-b border-gray-300">
+                  {/* <Link href=""><img
+                    className=" object-scale-down pr-8"
+                    src="/images/facebook-fill black.png"
+                  ></img></Link> */}
                   <img
                     className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"
