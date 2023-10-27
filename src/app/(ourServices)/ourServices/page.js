@@ -17,14 +17,14 @@ const page = () => {
                 <header className="text-white flex justify-between w-full py-[30px] ">
                   <Link href="/">
                     <img
-                      className="px-6 py-6 pl-20"
+                      className=""
                       src="/images/hypersonic logo.png"
                       alt="logo"
                     ></img> 
                   </Link>
 
                   <nav className="flex flex-wrap items-center justify-between">
-                    <ul className="flex top-2 gap-6">
+                    <ul className="flex top-2 gap-6 ">
                       <li className="">
                         <a href="#">Services</a>
                       </li>
@@ -41,28 +41,28 @@ const page = () => {
                         <a href="#">Contact</a>
                       </li>
                       <div></div>
-                      <li className="mr-2">
+                      <li className="">
                         <a href="#">
                           <img
-                            className="mr-2"
+                            className=""
                             src="/images/facebook-fill.png"
                             alt="fb logo"
                           />
                         </a>
                       </li>
-                      <li className="mr-2">
+                      <li className="">
                         <a href="#">
                           <img
-                            className="mr-2"
+                            className=""
                             src="/images/twitter-fill.png"
                             alt="twitter logo"
                           />
                         </a>
                       </li>
-                      <li className="mr-2">
+                      <li className="">
                         <a href="#">
                           <img
-                            className="mr-2"
+                            className=""
                             src="/images/instagram-line.png"
                             alt="insta logo"
                           />

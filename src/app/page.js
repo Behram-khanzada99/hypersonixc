@@ -35,14 +35,14 @@ const page = () => {
                       <li>
                         <a href="#">Insights</a>
                       </li>
-                      <li>
+                      <li className="">
                         <a href="#">Contact</a>
                       </li>
                     </ul>
-                    <div className="flex gap-4 border-l-2 border-gray-500 ">
+                    <div className="flex gap-5 pl-5 justify-end">
                       {" "}
                       <img
-                        className=" pl-6"
+                        className=" pl-10"
                         src="/images/facebook-fill.png"
                         alt="fb logo"
                       />
@@ -58,7 +58,10 @@ const page = () => {
                       />
                     </div>
                   </nav>
+
+                  
                 </header>
+               
               </div>
             </div>
             <div className="flex items-center justify-center">
