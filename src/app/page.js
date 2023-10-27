@@ -15,7 +15,7 @@ const page = () => {
 
           <div className="absolute  mx-auto top-0 w-full">
             <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
-              <div class="w-full bg-transparent container">
+              <div class="w-full bg-transparent container border-r border-gray-500">
                 <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
                     <img src="/images/hypersonic logo.png" alt="logo"></img>
@@ -35,33 +35,30 @@ const page = () => {
                       <li>
                         <a href="#">Insights</a>
                       </li>
-                      <li className="">
+                      <li className="pr-10">
                         <a href="#">Contact</a>
                       </li>
                     </ul>
-                    <div className="flex gap-5 pl-5 justify-end">
-                      {" "}
-                      <img
-                        className=" pl-10"
-                        src="/images/facebook-fill.png"
-                        alt="fb logo"
-                      />
-                      <img
-                        className=""
-                        src="/images/twitter-fill.png"
-                        alt="twitter logo"
-                      />
-                      <img
-                        className=""
-                        src="/images/instagram-line.png"
-                        alt="insta logo"
-                      />
-                    </div>
                   </nav>
-
-                  
                 </header>
-               
+              </div>
+              <div className="flex gap-5 pl-5 justify-end">
+                {" "}
+                <img
+                  className="pl-4 object-scale-down"
+                  src="/images/facebook-fill.png"
+                  alt="fb logo"
+                />
+                <img
+                  className=" object-scale-down"
+                  src="/images/twitter-fill.png"
+                  alt="twitter logo"
+                />
+                <img
+                  className=" object-scale-down"
+                  src="/images/instagram-line.png"
+                  alt="insta logo"
+                />
               </div>
             </div>
             <div className="flex items-center justify-center">
@@ -89,10 +86,10 @@ const page = () => {
 
         {/* div for measurable results section */}
         <div className="container mx-auto px-44">
-          <p className="flex items-center justify-center pt-28">
+          <p className="flex items-center justify-center pl-16 pt-28">
             WHAT TO EXPECT
           </p>
-          <h2 className="flex items-center justify-center py-2 pb-10 text-4xl">
+          <h2 className="flex items-center justify-center py-2 pb-10 text-4xl pl-16">
             <strong>Measurable Results</strong>
           </h2>
 
@@ -175,39 +172,41 @@ const page = () => {
         {/* div for customer experience */}
         <div class="flex mb-4 py-10 container mx-auto pb-24 justify-center align-middle px-44">
           <div>
-            <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
-            <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
-            <p className="pt-4 text-gray-400">
-              Find the missing spark in your customer relationship starts with
-              building a better understanding of your customers.
-            </p>
-            <div className="flex justify-between mb-1 pt-5">
-              <span className="text-base font-medium text-red-700 dark:text-black">
-                Data Science
-              </span>
-              <span className="text-sm font-medium text-red-700 dark:text-black">
-                50%
-              </span>
-            </div>
-            <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
-              <div className="bg-red-600 h-2 rounded-full "></div>
-            </div>
-            <div className="flex justify-between mb-1 pt-5">
-              <span className="text-base font-medium text-red-700 dark:text-black">
-                Creative Thinking
-              </span>
-              <span className="text-sm font-medium text-red-700 dark:text-black">
-                50%
-              </span>
-            </div>
-            <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
-              <div className="bg-red-600 h-2 rounded-full "></div>
+            <div className="pr-52">
+              <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
+              <h1 className="pt-5 text-3xl font-bold">CUSTOMER EXPERIENCE</h1>
+              <p className="pt-4 text-gray-400">
+                Find the missing spark in your customer relationship starts with
+                building a better understanding of your customers.
+              </p>
+              <div className="flex justify-between mb-1 pt-5">
+                <span className="text-base font-medium text-red-700 dark:text-black">
+                  Data Science
+                </span>
+                <span className="text-sm font-medium text-red-700 dark:text-black">
+                  50%
+                </span>
+              </div>
+              <div className=" w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+                <div className="bg-red-600 h-2 rounded-full "></div>
+              </div>
+              <div className="flex justify-between mb-1 pt-5">
+                <span className="text-base font-medium text-red-700 dark:text-black">
+                  Creative Thinking
+                </span>
+                <span className="text-sm font-medium text-red-700 dark:text-black">
+                  50%
+                </span>
+              </div>
+              <div className="w-80 bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+                <div className="bg-red-600 h-2 rounded-full "></div>
+              </div>
             </div>
           </div>
 
-          <div className=" pl-14 pt-10">
+          <div className="  pt-20">
             <img
-              className=" scale-120"
+              className=" scale-150"
               src="/images/customer experience/customer exp mobileimg 2.png.png"
             ></img>
           </div>
@@ -229,7 +228,7 @@ const page = () => {
                   <p className="pb-20 text-gray-400">
                     Business of all sizes partner with us to uncover sharper
                     insights <br></br> and create smarter marketing that grows{" "}
-                    <span className=" text-pink-700">conversions.</span>
+                    <span className=" text-pink-700">conversions</span>
                   </p>
                   <p className="text-red-500"> </p>
                 </div>
@@ -331,7 +330,7 @@ const page = () => {
                 <div class="grid grid-cols-3 gap-8 py-5 w-full">
                   <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                    <h1 className="text-2xl font-bold pb-5">
+                    <h1 className="text-2xl font-semibold pb-5">
                       9 Guidlines for E-commerce Product Images
                     </h1>
                     <p className=" pb-5 text-gray-400">
@@ -347,7 +346,7 @@ const page = () => {
                   </div>
                   <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                    <h1 className="text-2xl font-bold pb-5">
+                    <h1 className="text-2xl font-semibold pb-5">
                       9 Guidelines for E-commerce Product Images
                     </h1>
                     <p className=" pb-5 text-gray-400">
@@ -363,7 +362,7 @@ const page = () => {
                   </div>
                   <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                    <h1 className="text-2xl font-bold pb-5">
+                    <h1 className="text-2xl font-semibold pb-5">
                       Advertising On Amazon For Amazon Sellers
                     </h1>
                     <p className=" pb-5 text-gray-400">
@@ -379,7 +378,7 @@ const page = () => {
                   </div>
                   <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                    <h1 className="text-2xl font-bold pb-5">
+                    <h1 className="text-2xl font-semibold pb-5">
                       What is Faderated Learning for Cohorts (FLoC)
                     </h1>
                     <p className=" pb-5 text-gray-400">
@@ -395,7 +394,7 @@ const page = () => {
                   </div>
                   <div className=" border-2 rounded-xl px-10 py-4 w-full">
                     <h2 className=" pb-5 pt-5 text-gray-400">E-Commerce</h2>
-                    <h1 className="text-2xl font-bold pb-5">
+                    <h1 className="text-2xl font-semibold pb-5">
                       Instagram Reels: What Are They and How to Use them?
                     </h1>
                     <p className=" pb-5 text-gray-400">
@@ -453,7 +452,7 @@ const page = () => {
               </div>
               <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
                 <p className=" text-lg font-bold w-full">FOLLOW US</p>
-                <div className="py-8 flex pr-2 border-b border-neutral-700">
+                <div className="py-8 flex pr-2 border-b border-gray-300">
                   <img
                     className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"

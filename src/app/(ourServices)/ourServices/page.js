@@ -12,65 +12,51 @@ const page = () => {
             alt="home bg img"
           />
           <div className="absolute mx-auto top-0 w-full">
-            <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
-              <div class="w-full bg-transparent container">
-                <header className="text-white flex justify-between w-full py-[30px] ">
+          <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
+              <div class="w-full bg-transparent container border-r border-gray-500">
+                <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
-                    <img
-                      className=""
-                      src="/images/hypersonic logo.png"
-                      alt="logo"
-                    ></img> 
+                    <img src="/images/hypersonic logo.png" alt="logo"></img>
                   </Link>
 
                   <nav className="flex flex-wrap items-center justify-between">
-                    <ul className="flex top-2 gap-6 ">
-                      <li className="">
-                        <a href="#">Services</a>
+                    <ul className="flex gap-6 top-2">
+                      <li>
+                        <Link href="/ourServices">Services</Link>
                       </li>
-                      <li className="">
+                      <li>
                         <a href="#">Clients</a>
                       </li>
-                      <li className="-">
+                      <li>
                         <a href="#">About</a>
                       </li>
-                      <li className="">
+                      <li>
                         <a href="#">Insights</a>
                       </li>
-                      <li className="">
+                      <li className="pr-10">
                         <a href="#">Contact</a>
-                      </li>
-                      <div></div>
-                      <li className="">
-                        <a href="#">
-                          <img
-                            className=""
-                            src="/images/facebook-fill.png"
-                            alt="fb logo"
-                          />
-                        </a>
-                      </li>
-                      <li className="">
-                        <a href="#">
-                          <img
-                            className=""
-                            src="/images/twitter-fill.png"
-                            alt="twitter logo"
-                          />
-                        </a>
-                      </li>
-                      <li className="">
-                        <a href="#">
-                          <img
-                            className=""
-                            src="/images/instagram-line.png"
-                            alt="insta logo"
-                          />
-                        </a>
                       </li>
                     </ul>
                   </nav>
                 </header>
+              </div>
+              <div className="flex gap-5 pl-5 justify-end">
+                {" "}
+                <img
+                  className="pl-4 object-scale-down"
+                  src="/images/facebook-fill.png"
+                  alt="fb logo"
+                />
+                <img
+                  className=" object-scale-down"
+                  src="/images/twitter-fill.png"
+                  alt="twitter logo"
+                />
+                <img
+                  className=" object-scale-down"
+                  src="/images/instagram-line.png"
+                  alt="insta logo"
+                />
               </div>
             </div>
             <div className=" text-center justify-center text-white">
@@ -268,7 +254,7 @@ const page = () => {
               </div>
               <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
                 <p className=" text-lg font-bold w-full">FOLLOW US</p>
-                <div className="py-8 flex pr-2 border-b border-neutral-700">
+                <div className="py-8 flex pr-2 border-b border-gray-300">
                   <img
                     className=" object-scale-down pr-8"
                     src="/images/facebook-fill black.png"
