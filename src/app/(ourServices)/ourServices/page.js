@@ -21,19 +21,19 @@ const page = () => {
 
                   <nav className="flex flex-wrap items-center justify-between">
                     <ul className="flex gap-6 top-2">
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <Link href="/ourServices">Services</Link>
                       </li>
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <a href="#">Clients</a>
                       </li>
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <a href="#">About</a>
                       </li>
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <a href="#">Insights</a>
                       </li>
-                      <li className=" pr-10 hover:bg-slate-700">
+                      <li className=" pr-10 hover:text-yellow-300">
                         <a href="#">Contact</a>
                       </li>
                     </ul>
@@ -244,27 +244,27 @@ const page = () => {
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Services
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Clients
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       About
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Careers
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Contact
                     </li>
                   </Link>
@@ -272,27 +272,27 @@ const page = () => {
                 <ul>
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Advertising
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Analytics
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       CX Management
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       E-commerce
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Education
                     </li>{" "}
                   </Link>

@@ -18,24 +18,24 @@ const page = () => {
               <div class="w-full bg-transparent container border-r border-gray-500">
                 <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
-                    <img src="/images/hypersonic logo.png" alt="logo"></img>
+                    <img className="" src="/images/hypersonic logo.png" alt="logo"></img>
                   </Link>
 
                   <nav className="flex flex-wrap items-center justify-between">
                     <ul className="flex gap-6 top-2">
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <Link href="/ourServices">Services</Link>
                       </li>
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <a href="#">Clients</a>
                       </li>
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <a href="#">About</a>
                       </li>
-                      <li className=" hover:bg-slate-700">
+                      <li className=" hover:text-yellow-300">
                         <a href="#">Insights</a>
                       </li>
-                      <li className=" pr-10 hover:bg-slate-700">
+                      <li className=" pr-10 hover:text-yellow-300">
                         <a href="#">Contact</a>
                       </li>
                     </ul>
@@ -323,7 +323,7 @@ const page = () => {
               <button className="mr-5 text-lg bg-transparent hover:bg-red-600 text-white font-bold py-2 px-4 border border-white hover:border-transparent rounded-md">
                 Proposal
               </button>
-              <button className="ml-5 text-lg bg-white text-black font-bold py-2 px-4 border border-white hover:border-transparent rounded-md">
+              <button className="ml-5 text-lg bg-white text-black font-bold py-2 px-4 border hover:bg-slate-400 border-white hover:border-transparent rounded-md">
                 Contact Us
               </button>
             </div>
@@ -420,11 +420,12 @@ const page = () => {
                     </p>
                   </div>
                   <div className=" border-2 rounded-xl px-10 py-4 w-full">
-                    <img
+                    <Link href=""> <img
                       className=" mx-auto pt-24"
                       src="/images/plus sign.png"
                       alt="plus sign"
                     ></img>
+                    </Link>
                     <p className=" text-center text-2xl font-semibold pt-3">
                       View All Posts
                     </p>
@@ -447,27 +448,27 @@ const page = () => {
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Services
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Clients
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       About
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Careers
                     </li>
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Contact
                     </li>
                   </Link>
@@ -475,27 +476,27 @@ const page = () => {
                 <ul>
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Advertising
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Analytics
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       CX Management
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       E-commerce
                     </li>{" "}
                   </Link>
                   <Link href="">
-                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                    <li className=" pb-5 text-gray-400 hover:text-blue-300">
                       Education
                     </li>{" "}
                   </Link>
