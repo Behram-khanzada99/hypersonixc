@@ -4,16 +4,16 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="w-full flex justify-center mx-auto">
-      <div className="w-full">
+      <div className="relative w-full">
         {/* div for content with same bg */}
         <div className="relative w-full mx-auto flex justify-center">
           <img
-            className="w-full max-h-[960px] object-cover"
+            className="absolute z-[-1] w-full h-full object-cover"
             src="/images/home bg.png"
             alt="home bg img"
           />
 
-          <div className=" absolute mx-auto top-0 w-full">
+          <div className="mx-auto top-0 w-full pb-96">
             <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
               <div class="w-full bg-transparent container border-r border-gray-500">
                 <header className="text-white flex justify-between w-full py-[30px]">
@@ -59,12 +59,14 @@ const page = () => {
                   alt="twitter logo"
                 />
 
-                <Link href={"/"}> <img
-                  className=" absolute pt-8 object-scale-down"
-                  src="/images/instagram-line.png"
-                  alt="insta logo"
-                /></Link>
-               
+                <Link href={"/"}>
+                  {" "}
+                  <img
+                    className=" absolute pt-8 object-scale-down"
+                    src="/images/instagram-line.png"
+                    alt="insta logo"
+                  />
+                </Link>
               </div>
             </div>
             <div className="flex items-center justify-center">
@@ -148,13 +150,14 @@ const page = () => {
         </div>
 
         {/* div for case study section */}
+
         <div className="relative w-full flex justify-center mx-auto">
           <img
-            className="w-full max-h-[440px] object-cover"
+            className="w-full h-full z-[-1] absolute object-cover"
             src="/images/case study bg.png"
             alt="case study section bg"
           />
-          <div className="absolute top-[20%] w-full mx-auto flex items-center justify-center">
+          <div className=" top-[20%] w-full mx-auto flex items-center justify-center py-20">
             <div className="  text-white">
               <h2 className="flex items-center justify-center pt-3 py-3 align-middle">
                 HOW WE WORK
@@ -176,7 +179,7 @@ const page = () => {
         </div>
 
         {/* div for customer experience */}
-        <div class="flex mb-4 py-10 container mx-auto pb-24 justify-center align-middle px-44">
+        <div className="flex mb-4 py-10 container mx-auto pb-24 justify-center align-middle px-44">
           <div>
             <div className="pr-52">
               <h2 className="pt-14 text-gray-400">WHAT WE FOCUS</h2>
@@ -221,11 +224,11 @@ const page = () => {
         {/* accelerative growth div */}
         <div className="relative w-full mx-auto text-center flex justify-center align-middle">
           <img
-            className="w-full max-h-[594px] object-cover"
+            className="absolute z-[-1] w-full h-full object-cover"
             src="/images/accelarate growth/accelarate growth bg.png"
             alt="accelerative growth bg"
           ></img>
-          <div className="absolute container mx-auto top-10 w-full text-white py-10 px-44">
+          <div className="py-20 container mx-auto top-10 w-full text-white px-44">
             <div className=" text-left">
               <h2 className="pb-7 font-medium text-gray-400">WHAT WE DO</h2>
               <h1 className="font-bold text-3xl pb-5">ACCELERATE GROWTH</h1>
@@ -301,13 +304,14 @@ const page = () => {
           </div>
         </div>
         {/* div for get started section */}
+
         <div className="relative w-full flex justify-center  mx-auto">
           <img
-            className="w-full max-h-[432px] object-cover"
+            className="w-full h-full z-[-1] absolute object-cover"
             src="/images/case study bg.png"
             alt="get started section bg"
           />
-          <div className="absolute container mx-auto top-10 w-full text-center justify-center text-white py-4">
+          <div className="container mx-auto top-10 w-full text-center justify-center text-white py-20">
             <h2 className="pt-5 py-3">NEXT STEPS</h2>
             <h1 className="text-3xl font-bold pt-5 pb-5">GET STARTED</h1>
             <p className=" pb-5">
@@ -325,6 +329,7 @@ const page = () => {
             </div>
           </div>
         </div>
+
         {/* div for our insights section */}
         <div className="container mx-auto">
           <div className="pb-24 px-52">
@@ -433,11 +438,11 @@ const page = () => {
         <footer>
           <div className="relative w-full  mx-auto flex justify-center">
             <img
-              className="w-full max-h-[416px] object-cover"
+              className="absolute z-[-1] w-full h-full object-cover"
               src="/images/footer bg.png"
               alt="footer bg"
             ></img>
-            <div className="container absolute top-[25%] bottom-[35%] flex justify-between w-full">
+            <div className="container py-20 top-[25%] bottom-[35%] flex justify-between w-full">
               <div className="flex gap-[120px] w-full">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
@@ -496,33 +501,27 @@ const page = () => {
                   </Link>
                 </ul>
               </div>
-              <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
+              <div className="max-w-[248px] flex flex-col w-full text-start">
                 <p className=" text-lg font-bold w-full">FOLLOW US</p>
                 <div className="py-8 flex pr-2 border-b border-gray-300">
-                  {/* <Link href=""><img
-                    className=" object-scale-down pr-8"
-                    src="/images/facebook-fill black.png"
-                  ></img></Link> */}
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/facebook-fill black.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/twitter-fill  black.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/instagram-line black.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/linkdin logo.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/youtube logo.png"
-                  ></img>
+                  <a href="your_facebook_url_here" className=" h-auto pr-8">
+                    <img src="/images/facebook-fill black.png" alt="Facebook" />
+                  </a>
+                  <a href="your_twitter_url_here" className="pr-8">
+                    <img src="/images/twitter-fill  black.png" alt="Twitter" />
+                  </a>
+                  <a href="your_instagram_url_here" className=" pr-8">
+                    <img
+                      src="/images/instagram-line black.png"
+                      alt="Instagram"
+                    />
+                  </a>
+                  <a href="your_linkedin_url_here" className=" pr-8">
+                    <img src="/images/linkdin logo.png" alt="LinkedIn" />
+                  </a>
+                  <a href="your_youtube_url_here" className=" pr-8">
+                    <img src="/images/youtube logo.png" alt="YouTube" />
+                  </a>
                 </div>
                 <p className="text-sm whitespace-nowrap pt-5 w-full">
                   © 2022 Hypersonic All Right Reserved

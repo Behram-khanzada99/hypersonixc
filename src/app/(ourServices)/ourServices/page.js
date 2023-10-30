@@ -7,12 +7,12 @@ const page = () => {
         {/* div for content with same bg */}
         <div className="relative w-full mx-auto flex justify-center">
           <img
-            className="w-full max-h-[540px] object-cover"
+            className="absolute w-full h-full z-[-1] object-cover"
             src="/images/2nd page/OurServices bg.png"
             alt="home bg img"
           />
-          <div className="absolute mx-auto top-0 w-full">
-          <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
+          <div className="mx-auto top-0 w-full pb-80">
+            <div class="flex mb-4 border-b border-gray-500 w-full justify-center">
               <div class="w-full bg-transparent container border-r border-gray-500">
                 <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
@@ -21,19 +21,19 @@ const page = () => {
 
                   <nav className="flex flex-wrap items-center justify-between">
                     <ul className="flex gap-6 top-2">
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <Link href="/ourServices">Services</Link>
                       </li>
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <a href="#">Clients</a>
                       </li>
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <a href="#">About</a>
                       </li>
-                      <li>
+                      <li className=" hover:bg-slate-700">
                         <a href="#">Insights</a>
                       </li>
-                      <li className="pr-10">
+                      <li className=" pr-10 hover:bg-slate-700">
                         <a href="#">Contact</a>
                       </li>
                     </ul>
@@ -41,22 +41,28 @@ const page = () => {
                 </header>
               </div>
               <div className="flex gap-5 pl-5 justify-end">
-                {" "}
+                <Link href={"/"}>
+                  <img
+                    className="absolute pt-8 object-scale-down"
+                    src="/images/facebook-logo new.svg"
+                    alt="fb logo"
+                  />{" "}
+                </Link>
+
                 <img
-                  className="pl-4 object-scale-down"
-                  src="/images/facebook-fill.png"
-                  alt="fb logo"
-                />
-                <img
-                  className=" object-scale-down"
+                  className=" object-scale-down pl-5"
                   src="/images/twitter-fill.png"
                   alt="twitter logo"
                 />
-                <img
-                  className=" object-scale-down"
-                  src="/images/instagram-line.png"
-                  alt="insta logo"
-                />
+
+                <Link href={"/"}>
+                  {" "}
+                  <img
+                    className=" absolute pt-8 object-scale-down"
+                    src="/images/instagram-line.png"
+                    alt="insta logo"
+                  />
+                </Link>
               </div>
             </div>
             <div className=" text-center justify-center text-white">
@@ -227,54 +233,92 @@ const page = () => {
         </div>
 
         <footer>
-          <div className="relative w-full  mx-auto flex justify-center">
+        <div className="relative w-full  mx-auto flex justify-center">
             <img
-              className="w-full max-h-[416px] object-cover"
+              className="absolute z-[-1] w-full h-full object-cover"
               src="/images/footer bg.png"
               alt="footer bg"
             ></img>
-            <div className="container absolute top-[25%] bottom-[35%] flex justify-between w-full">
+            <div className="container py-20 top-[25%] bottom-[35%] flex justify-between w-full">
               <div className="flex gap-[120px] w-full">
                 <ul>
                   <li className="font-bold text-xl pb-5">NAVIGRATION</li>
-                  <li className=" pb-5 text-gray-400">Services</li>
-                  <li className=" pb-5 text-gray-400">Clients</li>
-                  <li className=" pb-5 text-gray-400">About</li>
-                  <li className=" pb-5 text-gray-400">Careers</li>
-                  <li className=" pb-5 text-gray-400">Contact</li>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Services
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Clients
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      About
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Careers
+                    </li>
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Contact
+                    </li>
+                  </Link>
                 </ul>
                 <ul>
                   <li className="font-bold text-xl pb-5">INSIGHTS</li>
-                  <li className=" pb-5 text-gray-400">Advertising</li>
-                  <li className=" pb-5 text-gray-400">Analytics</li>
-                  <li className=" pb-5 text-gray-400">CX Management</li>
-                  <li className=" pb-5 text-gray-400">E-commerce</li>
-                  <li className=" pb-5 text-gray-400">Education</li>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Advertising
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Analytics
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      CX Management
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      E-commerce
+                    </li>{" "}
+                  </Link>
+                  <Link href="">
+                    <li className=" pb-5 text-gray-400 hover:bg-slate-200">
+                      Education
+                    </li>{" "}
+                  </Link>
                 </ul>
               </div>
-              <div className="max-w-[248px] flex flex-col justify-end w-full text-start">
+              <div className="max-w-[248px] flex flex-col w-full text-start">
                 <p className=" text-lg font-bold w-full">FOLLOW US</p>
                 <div className="py-8 flex pr-2 border-b border-gray-300">
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/facebook-fill black.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/twitter-fill  black.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/instagram-line black.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/linkdin logo.png"
-                  ></img>
-                  <img
-                    className=" object-scale-down pr-8"
-                    src="/images/youtube logo.png"
-                  ></img>
+                  <a href="your_facebook_url_here" className=" h-auto pr-8">
+                    <img src="/images/facebook-fill black.png" alt="Facebook" />
+                  </a>
+                  <a href="your_twitter_url_here" className="pr-8">
+                    <img src="/images/twitter-fill  black.png" alt="Twitter" />
+                  </a>
+                  <a href="your_instagram_url_here" className=" pr-8">
+                    <img
+                      src="/images/instagram-line black.png"
+                      alt="Instagram"
+                    />
+                  </a>
+                  <a href="your_linkedin_url_here" className=" pr-8">
+                    <img src="/images/linkdin logo.png" alt="LinkedIn" />
+                  </a>
+                  <a href="your_youtube_url_here" className=" pr-8">
+                    <img src="/images/youtube logo.png" alt="YouTube" />
+                  </a>
                 </div>
                 <p className="text-sm whitespace-nowrap pt-5 w-full">
                   © 2022 Hypersonic All Right Reserved
