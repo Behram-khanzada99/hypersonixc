@@ -16,7 +16,7 @@ const page = () => {
               <div class="w-full bg-transparent container border-r border-gray-500">
                 <header className="text-white flex justify-between w-full py-[30px]">
                   <Link href="/">
-                    <img src="/images/hypersonic logo.png" alt="logo"></img>
+                    <img className=" hover:bg-blue-700" src="/images/hypersonic logo.png" alt="logo"></img>
                   </Link>
 
                   <nav className="flex flex-wrap items-center justify-between">
